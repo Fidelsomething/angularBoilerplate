@@ -1,22 +1,38 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { MatCardModule, MatProgressSpinnerModule, MatMenuModule,
+  MatIconModule, MatToolbarModule, MatButtonModule, MatFormFieldModule,
+  MatInputModule, MatSelectModule, MatSortModule, MatTableModule  } from "@angular/material/";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from "./app-routing.module";
+
 
 import { AppComponent } from './app.component';
-import { HeroesComponent } from './heroes/heroes.component';
-import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeroesComponent,
-    HeroDetailComponent,
-    MessagesComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    AppRoutingModule,
+    MatCardModule,
+    MatProgressSpinnerModule,
+    MatMenuModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatSortModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
